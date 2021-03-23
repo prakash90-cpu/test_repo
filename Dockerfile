@@ -1,5 +1,4 @@
-From openjdk:8
+FROM openjdk:8-jdk-alpine
 COPY . /F:/Docker_practice
 WORKDIR /F:/Docker_practice
-RUN javac Main.java
-CMD ["java", "Main"]
+ENTRYPOINT ["java","-jar","/app.jar"]
