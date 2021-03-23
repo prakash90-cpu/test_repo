@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
-COPY . /F:/Docker_practice
-WORKDIR /F:/Docker_practice
+COPY . /workspace
+WORKDIR /workspace
 ENTRYPOINT ["java","-jar","/app.jar"]
